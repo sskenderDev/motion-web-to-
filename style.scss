@@ -1,2 +1,235 @@
-$maincolor:red;
+$maincolor: black;
+@mixin theme($theme: #FF1A1A) {
+  background: $theme;
+  box-shadow: 0 0 1px rgba($theme, .25);
+  color: #fff;
+  font-size: 17px;
+  font-family: sans-serif;
+}
+.scroll {
+  overflow: hidden;
+}
+#catalog {
+  .catalog {
+    position: relative;
 
+    &--one {
+      display: flex;
+      justify-content: space-between;
+
+      &__text {
+        h1 {
+          color: white;
+          font-size: 50px;
+          padding: 20px 0;
+        }
+
+        p {
+          font-size: 20px;
+          color: white;
+        }
+      }
+
+      &__left {
+        display: flex;
+        justify-content: start;
+        flex-direction: column;
+        align-items: flex-end;
+
+        &--left1 {
+          display: flex;
+          justify-content: space-between;
+          flex-direction: column;
+
+          p {
+            color: #9099A3;
+          }
+
+          input {
+            color: #9099A3;
+            font-size: 18px;
+            background: none;
+            border: 2px solid #9099A3;
+            width: 700px;
+            height: 50px;
+            border-radius: 10px;
+            padding: 0 20px;
+            margin: 10px 0;
+          }
+        }
+
+        &--end {
+          padding: 10px 0;
+          display: flex;
+          p {
+          color: white;
+          padding: 0 57px;
+             }
+
+              button {
+                width: 280px;
+                height: 60px;
+                border-radius: 15px;
+                font-size: 17px;
+                background: red;
+                color: white;
+                transition: 0.7s;
+                transform: scale(1);
+                cursor: pointer;
+              }
+              button:hover {
+                transition: 0.7s;
+                transform: scale(1.1);
+                background: #ffffff;
+                color: black;
+                font-size: 20px;
+              }
+            //}
+
+        }
+      }
+    }
+  }
+
+}
+#saidebar 4{
+   .saidebar {
+      &--start {
+        h1 {
+          color: white;
+          font-size: 40px;
+          padding: 20px 600px;
+        }
+
+        &__start2 {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+
+          &--center {
+            position: relative;
+            width: 400px;
+            height: 300px;
+            background: #000;
+
+            img {
+              position: absolute;
+              left: 150px;
+            }
+
+            &__center1 {
+              p {
+                padding-top: 70px;
+                color: white;
+              }
+            }
+
+            &__end {
+              display: flex;
+              padding: 20px 0;
+              color: white;
+            }
+
+            &__btn {
+              padding: 10px 120px;
+
+              button {
+                width: 260px;
+                height: 50px;
+                font-size: 20px;
+                padding: 0px 15px;
+                border-radius: 10px;
+                background: red;
+                color: white;
+                border: none;
+                transition: 0.7s;
+                transform: scale(1);
+                cursor: pointer;
+              }
+
+              button:hover {
+                transition: 0.7s;
+                transform: scale(1.1);
+                background: white;
+                color: black;
+                font-size: 15px;
+              }
+            }
+          }
+        }
+      }
+   }
+}
+#footer {
+  .footer {
+      color: white;
+
+      &--start {
+        display: flex;
+        padding: 80px 0px;
+
+        &__one {
+
+        }
+
+        &__two {
+          padding: 10px 40px;
+
+          p {
+            color: #9099A3;
+          }
+        }
+
+        &__three {
+          padding-left: 240px;
+
+          p {
+            color: #9099A3;
+          }
+
+          &--iconka {
+            font-size: 20px;
+            padding: 10px 0px;
+
+            .fa-facebook-f {
+              margin: 0 10px;
+            }.fa-telegram {
+              margin: 0 10px;
+            }
+            &__icons {
+              margin: 5px 0px;
+              .fa-youtube {
+                margin: 0 10px;
+              }
+            }
+          }
+        }
+
+        &__four {
+          padding-left: 200px;
+
+          p {
+            margin-top: 60px;
+            color: #9099A3;
+          }
+        }
+      }
+
+      &--end {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding: 20px 0;
+        p {
+          color: #9099A3;
+        }
+
+        &__two {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px 0;
+        }
+      }
+   }
+}
