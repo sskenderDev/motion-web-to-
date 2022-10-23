@@ -12,6 +12,7 @@
             <item index="4" class="java.lang.String" itemvalue="embed" />
             <item index="5" class="java.lang.String" itemvalue="script" />
             <item index="6" class="java.lang.String" itemvalue="hero-btn1" />
+            <item index="6" class="java.lang.String" itemvalue="ion-icon" />
           </list>
         </value>
       </option>
