@@ -1,17 +1,184 @@
-/* Error: expected selector.
- *    ,
- * 95 | #saidebar 4{
- *    |           ^
- *    '
- *   style.scss 95:11  root stylesheet */
-
-body::before {
-  font-family: "Source Code Pro", "SF Mono", Monaco, Inconsolata, "Fira Mono",
-      "Droid Sans Mono", monospace, monospace;
-  white-space: pre;
-  display: block;
-  padding: 1em;
-  margin-bottom: 1em;
-  border-bottom: 2px solid black;
-  content: "Error: expected selector.\a    \2577 \a 95 \2502  #saidebar 4{\d\a    \2502            ^\a    \2575 \a   style.scss 95:11  root stylesheet";
+.scroll {
+  overflow: hidden;
 }
+
+#catalog .catalog {
+  position: relative;
+}
+#catalog .catalog--one {
+  display: flex;
+  justify-content: space-between;
+}
+#catalog .catalog--one__text h1 {
+  color: white;
+  font-size: 50px;
+  padding: 20px 0;
+}
+#catalog .catalog--one__text p {
+  font-size: 20px;
+  color: white;
+}
+#catalog .catalog--one__left {
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  align-items: flex-end;
+}
+#catalog .catalog--one__left--left1 {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+}
+#catalog .catalog--one__left--left1 p {
+  color: #9099A3;
+}
+#catalog .catalog--one__left--left1 input {
+  color: #9099A3;
+  font-size: 18px;
+  background: none;
+  border: 2px solid #9099A3;
+  width: 700px;
+  height: 50px;
+  border-radius: 10px;
+  padding: 0 20px;
+  margin: 10px 0;
+}
+#catalog .catalog--one__left--end {
+  padding: 10px 0;
+  display: flex;
+}
+#catalog .catalog--one__left--end p {
+  color: white;
+  padding: 0 57px;
+}
+#catalog .catalog--one__left--end button {
+  width: 280px;
+  height: 60px;
+  border-radius: 15px;
+  font-size: 17px;
+  background: red;
+  color: white;
+  transition: 0.7s;
+  transform: scale(1);
+  cursor: pointer;
+}
+#catalog .catalog--one__left--end button:hover {
+  transition: 0.7s;
+  transform: scale(1.1);
+  background: #ffffff;
+  color: black;
+  font-size: 20px;
+}
+
+#saidebar .saidebar--start h1 {
+  color: white;
+  font-size: 40px;
+  padding: 20px 600px;
+}
+#saidebar .saidebar--start__start2 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#saidebar .saidebar--start__start2--center {
+  position: relative;
+  width: 400px;
+  height: 300px;
+  background: #000;
+}
+#saidebar .saidebar--start__start2--center img {
+  position: absolute;
+  left: 150px;
+}
+#saidebar .saidebar--start__start2--center__center1 p {
+  padding-top: 70px;
+  color: white;
+}
+#saidebar .saidebar--start__start2--center__end {
+  display: flex;
+  padding: 20px 0;
+  color: white;
+}
+#saidebar .saidebar--start__start2--center__btn {
+  padding: 10px 120px;
+}
+#saidebar .saidebar--start__start2--center__btn button {
+  width: 260px;
+  height: 50px;
+  font-size: 20px;
+  padding: 0px 15px;
+  border-radius: 10px;
+  background: red;
+  color: white;
+  border: none;
+  transition: 0.7s;
+  transform: scale(1);
+  cursor: pointer;
+}
+#saidebar .saidebar--start__start2--center__btn button:hover {
+  transition: 0.7s;
+  transform: scale(1.1);
+  background: white;
+  color: black;
+  font-size: 15px;
+}
+
+#footer .footer {
+  color: white;
+}
+#footer .footer--start {
+  display: flex;
+  padding: 80px 0px;
+}
+#footer .footer--start__two {
+  padding: 10px 40px;
+}
+#footer .footer--start__two p {
+  color: #9099A3;
+}
+#footer .footer--start__three {
+  padding-left: 240px;
+}
+#footer .footer--start__three p {
+  color: #9099A3;
+}
+#footer .footer--start__three--iconka {
+  font-size: 20px;
+  padding: 10px 0px;
+}
+#footer .footer--start__three--iconka .fa-facebook-f {
+  margin: 0 10px;
+}
+#footer .footer--start__three--iconka .fa-telegram {
+  margin: 0 10px;
+}
+#footer .footer--start__three--iconka__icons {
+  margin: 5px 0px;
+}
+#footer .footer--start__three--iconka__icons .fa-youtube {
+  margin: 0 10px;
+}
+#footer .footer--start__four {
+  padding-left: 200px;
+}
+#footer .footer--start__four p {
+  margin-top: 60px;
+  color: #9099A3;
+}
+#footer .footer--end {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+}
+#footer .footer--end p {
+  color: #9099A3;
+}
+#footer .footer--end__two {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px 0;
+}
+
+/*# sourceMappingURL=style.css.map */
